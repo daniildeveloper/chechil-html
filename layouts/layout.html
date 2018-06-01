@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-self-center align-items-center">
+          <div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 header-first-column">
+            <div><img class="logo" src="images/logo.png" alt="Logo"></div>
+            <div class="header__address">
+              <div class="header__address__address">123317, Москва, м. Выставочная, Пресненская наб., д. 12</div>
+              <div class="header__address__working-time">График работы: 09.00 - 21.00<span class="header__address__working-time__address"><a class="address" href="#" data-toggle="modal" data-target="#mapModal">Как до нас добраться</a></span></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 text-right">
+            <div><a class="phone" href="tel: +7(495)741-84-94">+7(495)741-84-94</a></div>
+            <div><a class="mail" href="mailto: reception@chechil.com">reception@chechil.com</a></div>
+          </div>
+        </div>
+        <div class="row header__search">
+          <form class="col-md-9 col-xs-9 col-sm-9 col-lg-9" action="">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Поиск" aria-label="Поиск по сайту" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+          <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a class="btn-c2a" href="">Онлайн запись на прием</a></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">О клинике</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Врачи</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Услуги и цены</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Механический эндомассаж</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Вопрос-ответ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="contents disabled" id="contents">
+      <ol>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/doctor-choose-main.html">Выбор доктора</a></li>
+      </ol>
+      <h3>Резервация онлайн</h3>
+      <ol>
+        <li><a href="/doctor-category.html">Специальность врача</a></li>
+        <li><a href="/doctor-categories-doctors.html">Выберите врача</a></li>
+        <li><a href="/doctor-profile.html">Профиль врача</a></li>
+        <li><a href="/doctor-choose-contacts.html">Оставьте контактные данные для связи</a></li>
+        <li><a href="/proposal-thank-you-page.html">Спасибо за заявку</a></li>
+      </ol>
+      <p> <a href="#" onclick="closeContents()">Закрыть</a></p>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <div><img class="footer__logo" src="images/logo.png" alt="Клиника мануальной терапии доктора Чечиля"></div>
+            <div><a class="agency" href="#">Продвижение сайта Агенство Neyiron</a></div>
+          </div>
+          <div class="footer-col">
+            <div>
+              <p><a class="tel" href="tel: +7(495)741-84-94">+7(495)741-84-94</a></p>
+              <p><a class="mail" href="mailto: reception@chechil.com">reception@chechil.com</a></p>
+            </div>
+            <div>
+              <p><a href="#">Информация для потребителя</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="address">
+              <p>123317, Москва, Пресненская наб., д. 12, ММДЦ "Москва Сити", Башня Федерация "Запад", 40 этаж.</p>
+            </div>
+            <div>
+              <p class="copyright">© ООО “Клиника-Чечиля”, 2012 - 2018<span class="social-links"><a href="https://vk.com/doctor_chechil"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-odnoklassniki"></i></a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Как до нас добраться</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div id="map_yandex"></div>
+            <div class="map-buttons">
+              <button class="btn btn-info btn-car"><i class="fas fa-car"></i></button>
+              <button class="btn btn-info btn-walk"><i class="fas fa-walking"></i></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

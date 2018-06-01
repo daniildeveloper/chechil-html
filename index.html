@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Главная
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-self-center align-items-center">
+          <div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 header-first-column">
+            <div><img class="logo" src="images/logo.png" alt="Logo"></div>
+            <div class="header__address">
+              <div class="header__address__address">123317, Москва, м. Выставочная, Пресненская наб., д. 12</div>
+              <div class="header__address__working-time">График работы: 09.00 - 21.00<span class="header__address__working-time__address"><a class="address" href="#" data-toggle="modal" data-target="#mapModal">Как до нас добраться</a></span></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 text-right">
+            <div><a class="phone" href="tel: +7(495)741-84-94">+7(495)741-84-94</a></div>
+            <div><a class="mail" href="mailto: reception@chechil.com">reception@chechil.com</a></div>
+          </div>
+        </div>
+        <div class="row header__search">
+          <form class="col-md-9 col-xs-9 col-sm-9 col-lg-9" action="">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Поиск" aria-label="Поиск по сайту" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+          <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a class="btn-c2a" href="">Онлайн запись на прием</a></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">О клинике</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Врачи</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Услуги и цены</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Механический эндомассаж</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Вопрос-ответ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="contents disabled" id="contents">
+      <ol>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/doctor-choose-main.html">Выбор доктора</a></li>
+      </ol>
+      <h3>Резервация онлайн</h3>
+      <ol>
+        <li><a href="/doctor-category.html">Специальность врача</a></li>
+        <li><a href="/doctor-categories-doctors.html">Выберите врача</a></li>
+        <li><a href="/doctor-profile.html">Профиль врача</a></li>
+        <li><a href="/doctor-choose-contacts.html">Оставьте контактные данные для связи</a></li>
+        <li><a href="/proposal-thank-you-page.html">Спасибо за заявку</a></li>
+      </ol>
+      <p> <a href="#" onclick="closeContents()">Закрыть</a></p>
+    </div>
+    <div class="first-screen-index-page">
+      <div class="first-screen-index-page__content container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="first-screen-index-page-left">
+              <h2>Мы ставим на ноги!</h2>
+              <p>Врач — мануальный терапевт, участвующий в подготовке олимпийской сборной России по лыжным гонкам.</p><a class="btn btn-info sweep-to-right">Бесплатная консультация</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="first-screen-index-page-services-list"><a class="service" href="#">Мануальная терапия</a><a class="service" href="#">Традиционный массаж</a><a class="service" href="#">Лечебная физкультура</a><a class="service" href="#">Внутритканевая электростимуляция</a><a class="service" href="#">Стельки индивидуальные  ортопедические  “Formthotics”</a><a class="service" href="#">Восстановление после травм</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <div class="container">
+        <div class="accordion" id="servicesAccordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Наши услуги</button>
+              </h5>
+            </div>
+            <div class="collapse show bounceInDown" id="collapseOne" aria-labelledby="headingOne" data-parent="#servicesAccordion">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 cols-xs-4">
+                    <ul>
+                      <li><a href="#">Мануальная терапия</a></li>
+                      <li><a href="#">Классический массаж</a></li>
+                      <li><a href="#">Массаж с элементами ПИР</a></li>
+                      <li><a href="#">Вытяжение позвоночника</a></li>
+                      <li><a href="#">Лечебная физкультура</a></li>
+                      <li><a href="#">Восстановление нервов (ВТЭС)</a></li>
+                      <li><a href="#">Массаж спины</a></li>
+                      <li><a href="#">Тейпирование</a></li>
+                      <li><a href="#">Лечение остеохондроза</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 cols-xs-4">
+                    <ul>
+                      <li><a href="#">Аппарат Air Nobius</a></li>
+                      <li><a href="#">Индивидуальные ортопедические стельки</a></li>
+                      <li><a href="#">Восстановление после травм</a></li>
+                      <li><a href="#">Ортопедические стельки «Formthotics»</a></li>
+                      <li><a href="#">Kyboot – обувь на воздушной подушке</a></li>
+                      <li><a href="#">Лечение позвоночника мануальной терапией</a></li>
+                      <li><a href="#">Ортопедические стельки для спорта</a></li>
+                      <li><a href="#">Купить ортопедические пяточные стельки</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 cols-xs-4">
+                    <ul>
+                      <li><a href="#">Ортопедические стельки для взрослых</a></li>
+                      <li><a href="#">Продольно-поперечные стельки</a></li>
+                      <li><a href="#">Стельки при плоскостопии</a></li>
+                      <li><a href="#">Стельки при поперечном плоскостопии</a></li>
+                      <li><a href="#">Стоимость ортопедических стелек</a></li>
+                      <li><a href="#">Тонкие ортопедические стельки</a></li>
+                    </ul><a class="btn btn-info">Задать вопрос онлайн</a>
+                    <p class="small-description">Сергей Чечиль лично ответит на любые ваши вопросы прямо на сайте!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="doctor-chechil article">
+              <h3>Мануальный терапевт С.В. Чечиль</h3>
+              <div><img class="left" src="./images/chechel.jpeg" alt="Мануальный терапевт С.В. Чечиль">
+                <p>Наша клиника мануальной терапии основывает свою работу на взаимодействии с пациентом, а не на воздействии на него. Пациента посвящают во все особенности лечебного процесса для достижения положительного результата. Благодаря этому наши пациенты спокойны и уверены в будущем, что гарантирует быстрое выздоровление.</p>
+                <p>Мануальная терапия является современной медицинской специальностью, которая включает в себя разнообразные методы и способы лечения, направленные на профилактику, лечение и комплексное восстановление организма. Лечебный процесс проводит опытный мануальный терапевт, вследствие чего мобилизируются внутренние ресурсы организма, достигается быстрый благоприятный эффект.</p>
+              </div>
+              <div>
+                <h4>Показания к мануальной терапии</h4>
+                <div>
+                  <p>Мануальная терапия необходима людям, страдающим заболеваниями опорно-двигательного аппарата, которые сопровождаются болевыми синдромами. Цель терапии - повышение качества жизни пациента, восстановление утраченных функций, избавление от заболеваний. Данная методика является безопасной, эффективной и прекрасно работает в тех случаях, где не справляется классическая медицина. Используемые методы дают возможность легко избавиться от любых проблем со здоровьем.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-xs-6 col-md-6 col-sm-6">
+                  <h4>Преимущества нашей клиники мануальной терапии:</h4>
+                  <ul>
+                    <li>Высококвалифицированные специалисты.</li>
+                    <li>Индивидуальный подход к пациентам, ориентация на личностные потребности и переживания касательно лечения.</li>
+                    <li>Комплексное методик для мягкого и щадящего воздействия.</li>
+                    <li>Лечение всех возрастных групп.</li>
+                    <li>Гарантированный эффект от лечения.</li>
+                    <li>Лояльные цены.</li>
+                    <li>Полная ответственность персонала.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-xs-6 col-md-6 col-sm-6">
+                  <h4>Основные направления мануальной клиники в лечении:</h4>
+                  <ul>
+                    <li>Заболевания спины и позвоночника (сколиоз, остеохондроз, радикулит, кифоз, грыжи, протрузии).</li>
+                    <li>Головные боли различного характера, в том числе после травм.</li>
+                    <li>Заболевания суставов.</li>
+                    <li>Реабилитация и восстановление организма после операций и травм.</li>
+                    <li>Прочие боли различного характера и локализации.</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <p>В лечении используется комплексная комбинация различных методик, благодаря чему достигается желаемый эффект. Только своевременное обращение в клинику мануальной терапии позволит быстро избавиться от заболеваний и полностью восстановить здоровье и ресурсы организма.</p>
+              </div>
+            </div>
+            <div class="model-apparat article">
+              <h3>Моделирующий (аппаратный) массаж, коррекция фигуры.</h3><img class="article-preview" src="./images/advice_6.jpeg" alt="">
+              <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                  <h4>Независимо от техники исполнения массажа, данная процедура оказывает следующее воздействие на организм:</h4>
+                  <ul>
+                    <li>Улучшает кровоснабжение;</li>
+                    <li>Устраняет застойные явления;</li>
+                    <li>Расслабляет мышечную систему;</li>
+                    <li>Способствует разрушению жировых клеток;</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                  <p>Благодаря этому достигается стойкий эффект ровной, подтянутой и упругой кожи, а также наблюдается быстрое уменьшение объемов тела. Массаж тела для проблемных зон является отличной альтернативой традиционным методам похудения – диетам и специальным упражнениям, так как он не наносит вреда здоровью людей, которые в погоне за стройной фигурой могут пренебречь индивидуальными противопоказаниями и сорвать работу ЖКТ изнурительным пищевым ограничением или ухудшить состояние опорно-двигательного аппарата, перенося чрезмерные нагрузки.</p><a class="read-more-link" href="#">Читать полностью...</a>
+                </div>
+              </div>
+            </div>
+            <div class="courses content-partial article">
+              <h3>Курсы по кинезиотейпу</h3><img class="article-preview" src="./images/plastyr.jpeg" alt="Курсы по кинезиотейпу">
+              <div class="row">
+                <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                  <p>На протяжении жизни, человек постоянно сталкивается с такими проблемами как травмы, полученные как в бытовых условиях, так и в спорте или на отдыхе, боли в спине, мышцах, суставах, головные боли после тяжелого рабочего дня, отеки ног и многое другое.</p>
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                  <p>Схема борьбы с подобными недугами у большинсва людей одинаковая: таблетка обезболивающего или специальная мазь. Однако такие способы не всегда эффективны и безвредны: у таблеток есть масса противопоказаний и побочных действий, а мази и гели зачастую не оказывают должного эффекта.</p>
+                </div>
+              </div><br>
+              <div>
+                <p>Существует еще один простой и безопасный способ избавления от боли, гематом и отеков, давно применяемый профессиональными спортсменами и активно транслируемый средствами массовой информации-это кинезиотейпирование.</p>
+                <p><a class="read-more-link" href="#">Читать полностью...</a></p>
+              </div>
+            </div>
+            <div class="container free-consult content-partial">
+              <h4>Бесплатная консультация</h4>
+              <p>Так же Вы сможете пройти бесплатную консультацию у специалистов клиники!</p>
+              <div class="columns">
+                <div class="cols">
+                  <p>И сможете приобрести <span>кинезиотейп.</span></p>
+                  <p>Стоимость курса: <span>1 500 рублей.</span></p>
+                </div>
+                <div class="cols">
+                  <p>Запись по телефону <span>8 (495) 741-84-94.</span></p>
+                  <p>Расписание курсов уточняйте по телефону.</p>
+                </div>
+              </div>
+              <p>Данный курс не позволяет Вам использовать кинезиотейпы профессионально.</p>
+            </div>
+            <div class="manual-therapie-center content-partial article">
+              <h3>Центр мануальной терапии</h3>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <p>Мануальная терапия, выполняемая руками квалифицированного специалиста, имеет широчайший спектр положительного воздействия на опорно-двигательный аппарат.</p>
+                  <p>Курсы подобных процедур способны убрать чувство скованности движений, устранить боли в спине,боли суставах, облегчить состояние при целом ряде заболеваний, а также улучшить общее самочувствие и скорректировать осанку.</p>
+                  <p>В клинике мануальной терапии доктора Сергея Вячеславовича Чечиля работают только высококвалифицированные специалисты с большим опытом работы и массой довольных вылеченных пациентов, среди которых – участники олимпийской сборной России.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <p>Специалисты клиники с радостью помогут Вам при таких ситуациях, как:</p>
+                  <ul class="list-dot">
+                    <li>искривления позвоночника;</li>
+                    <li>головные боли;</li>
+                    <li>грыжи дисков позвоночника;</li>
+                    <li>острые и хронические боли в спине;</li>
+                    <li>боли после травм спины, шеи, грудной  клетки, конечностей;</li>
+                    <li>висцеральные нарушения;</li>
+                    <li>боли в стопах, коленях;</li>
+                    <li>онемение в конечностях;</li>
+                    <li>функциональные нарушения пищеварения, связанные с дисфункциями позвоночника и самих органов;</li>
+                    <li>и др.</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <p>При первом обращении в нашу клинику опытный специалист оценит ваше состояние и подберет для вас индивидуальную комплексную программу процедур, которая включит необходимое в Вашей ситуации количество сеансов мануальной терапии. Уже после первого сеанса вы почувствуете улучшение самочувствия, но для того чтобы получить максимальный эффект, следует пройти полный курс терапии, который включает в себя от 8 до 12 процедур.</p>
+              </div>
+              <div class="row article__actions">
+                <div class="col-sm-4"><a class="btn btn-info" href="#">Записаться на приём</a></div>
+                <div class="col-sm-8 align-self-center">
+                  <div class="c2a-text">Ждём Вас в нашем центре!</div>
+                </div>
+              </div>
+            </div>
+            <div class="content-partial article">
+              <h3>Поздравляем Юлию Белорукову с медалью на Олимпийских Играх!</h3>
+              <div class="slider">
+                <div class="item" id="carousel-1"><img src="./images/olymp_hapiness.jpeg" alt="Юлия Белорукова">
+                  <h4>За две недели до олимпиады была готова всё бросить</h4>
+                  <p>– За весь сезон вы лишь однажды становились призером Кубка мира, причем еще в ноябре. Что происходило потом?</p>
+                  <p>– Я сразу сказала Маркусу, что хочу в первом же старте решить задачу отбора на Олимпийские игры. А дальше уже спокойно выступать и ни о чем не думать. Поначалу...</p>
+                  <p>  <a class="read-more-link" href="#">Читать полностью...</a></p>
+                  <div class="arrows">
+                    <button class="owl-prev" type="button" role="presentation" onclick="prevSlide()"></button>
+                    <button class="owl-next" type="button" role="presentation" onclick="nextSlide()"></button>
+                  </div>
+                </div>
+                <div class="item" id="carousel-2"><img src="./images/olymp_hapiness.jpeg" alt="Юлия Белорукова">
+                  <h4>За две недели до олимпиады была готова всё бросить</h4>
+                  <p>– За весь сезон вы лишь однажды становились призером Кубка мира, причем еще в ноябре. Что происходило потом?</p>
+                  <p>– Я сразу сказала Маркусу, что хочу в первом же старте решить задачу отбора на Олимпийские игры. А дальше уже спокойно выступать и ни о чем не думать. Поначалу...</p>
+                  <p>  <a class="read-more-link" href="#">Читать полностью...</a></p>
+                  <div class="arrows">
+                    <button class="owl-prev" type="button" role="presentation" onclick="prevSlide()"></button>
+                    <button class="owl-next" type="button" role="presentation" onclick="nextSlide()"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c2a content-partials article">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-info" href="#">Избавим от<br>остеохондроза</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-info-1" href="#">Восстановим<br>после травм</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a class="btn btn-info-2" href="#">Лечим боль
+                    <vr></vr>в спине</a></div>
+              </div>
+            </div>
+            <div class="championship content-partial article">
+              <h3>Юбилейный чемпионат по лыжным видам спорта</h3>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <p>Мы принимали активное участие в подготовке Никиты Крюкова и Сергея Устюгова к этому чемпионату. Никита Крюков проходил реабилитацию в нашей клинике. Оба спортсмена выиграли командный спринт в индивидуальных стельках изготовленных в нашей клинике.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <p>Также Никита дал интервью каналу "Матч ТВ", где в числе прочих тем рассказал о своей больной спине и о том, как доктор Чечиль помог ему завоевать победу.</p>
+                </div>
+              </div>
+              <div class="gallery"><img src="./images/youtube_lukoil.jpeg" alt="">
+                <div class="gallery__info row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 gallery__info__item"><img src="./images/youtube_olimp_lukoil.jpeg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="partners content-patial article">
+              <h3>Наши партнёры</h3>
+              <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                  <div class="partner"><img src="./images/partner_1.jpeg" alt=""></div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                  <div class="partner"><img src="./images/partner_2.jpeg" alt=""></div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                  <div class="partner"><img src="./images/partner_3.jpeg" alt=""></div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                  <div class="partner"><img src="./images/partner_4.jpeg" alt=""></div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                  <div class="partner"><img src="./images/partner_5.jpeg" alt=""></div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                  <div class="partner"><img src="./images/partner_6.jpeg" alt=""></div>
+                </div>
+              </div>
+              <div class="partners-description">
+                <h4>US Medica</h4>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p>Благодаря применению специальных ручных манипуляций чувство скованности и боль в спине проходят, а суставы и позвоночник становятся более гибкими и подвижными.</p>
+                    <p>Мануальный терапевт подберет подходящую методику лечения в зависимости от вашей ситуации (например, терапию с использованием рывков и встряхиваний, позволяющую «разблокировать» позвонки, или мягкую терапию, более плавную и ритмичную).</p>
+                    <p> <a class="read-more-link" href="@">Подробнее...</a></p>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p>Приемы мануальной терапии помогают справиться с заболеваниями:</p>
+                    <ul>
+                      <li>Остеохондроз;</li>
+                      <li>Искривление позвоночника;</li>
+                      <li>Межпозвоночная грыжа;</li>
+                      <li>Радикулит;</li>
+                      <li>Травмы спины, грудной клетки и шеи;</li>
+                      <li>Патологические повреждения позвоночника.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-partial air-nobius article">
+              <h3>Тренажер для растяжки позвоночника Air Nobius</h3>
+              <div class="row baseline">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="./images/apparate.jpeg" alt="Тренажер для растяжки позвоночника Air Nobius">
+                  <p>Функциональная значимость пояснично- крестцового отдела позвоночника очень велика. К сожалению, около 25% людей с болью в спине жалуются на боли именно в этом отделе. Факторами риска являются повторяющаяся однообразная физическая активность, длительные статические нагрузки, сидячий образ жизни, возраст и т.д. Все это приводит к блокировке движения в пояснично-кресцовом отделе.</p><a class="read-more-link" href="#"> Читать полностью...</a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="./images/us_media_cover.jpeg" alt="">
+                  <p>Диск постепенно теряет эластичность, из-за чего может возникнуть протрузия и образоваться межпозвоночная грыжа. Располженный между позвонками диск имеет эластичную структуру и выполняет в первую очередь функцию амортизатора. К сожалению, со временем происходит изнашивание дисков и их дегенерация.</p>
+                </div>
+              </div>
+            </div>
+            <div class="articles content-partial article">
+              <h3>Статьи</h3>
+              <div class="articles__article article">
+                <h4 class="articles__article__title">Мануальная терапия</h4><img src="./images/massage_example.jpeg" alt="Мануальная терапия">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p>Благодаря применению специальных ручных манипуляций чувство скованности и боль в спине проходят, а суставы и позвоночник становятся более гибкими и подвижными.</p>
+                    <p>Мануальный терапевт подберет подходящую методику лечения в зависимости от вашей ситуации (например, терапию с использованием рывков и встряхиваний, позволяющую «разблокировать» позвонки, или мягкую терапию, более плавную и ритмичную).</p>
+                    <p><a class="read-more-link" href="#">Подробнее...</a></p>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p>Приемы мануальной терапии помогают справиться с заболеваниями:</p>
+                    <ul>
+                      <li>Остеохондроз;</li>
+                      <li>Искривление позвоночника;</li>
+                      <li>Межпозвоночная грыжа;</li>
+                      <li>Радикулит;</li>
+                      <li>Травмы спины, грудной клетки и шеи;</li>
+                      <li>Патологические повреждения позвоночника.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="articles__article article">
+                <h4 class="articles__article__title">Не ждите, когда заболит</h4><img src="./images/naked_missing.jpeg" alt="Не ждите, когда заболит">
+                <p>Даже если вы уверены, что с вашей спиной все в порядке, 1-2 раза в год посещайте кабинет мануальной терапии. Особенно если вы…</p>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p><span class="bold">…офисный работник.</span>Долгое пребывание в сидячем положении вредно ведет к нарушению работы позвоночника, суставов и мышц.</p>
+                    <p><span class="bold">…часто поднимаете тяжести.</span>Если отказаться от этой затеи невозможно, следите, чтобы нагрузка на позвоночник распределяется равномерно.</p>
+                    <p><a class="read-more-link" href="#">Подробнее...</a></p>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p><span class="bold">…стали сутулиться.</span>Ваше неправильно оборудованное рабочее место может стать причиной нарушения осанки. Кстати, сутулость ухудшает не только здоровье, но и ваш внешний вид (плечи стягиваются вперед, живот начинает вываливаться, вы становитесь ниже и кажетесь неуверенными).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 sidebar">
+            <div class="advices sidebar-content">
+              <h3>Полезные советы от доктора Чечиля</h3>
+              <div class="advice"><img src="./images/advice_1.jpeg" alt="">
+                <p><a href="#">Почему нельзя сидеть нога на ногу?</a></p>
+              </div>
+              <div class="advice"><img src="./images/advice_2.jpeg" alt="">
+                <p><a href="#">Как правильно сидеть за рулём?</a></p>
+              </div>
+              <div class="advice"><img src="./images/advice_3.jpeg" alt="">
+                <p><a href="#">Почему возникает сколиоз?</a></p>
+              </div>
+              <div class="advice"><img src="./images/advice_4.jpeg" alt="">
+                <p><a href="#">Подозрение на грыжу? Не спешите делать МРТ!</a></p>
+              </div>
+              <div class="advice"><img src="./images/advice_5.jpeg" alt="">
+                <p><a href="#">Спорт - польза или вред?</a></p>
+              </div>
+              <div class="advice"><img src="./images/advice_6.jpeg" alt="">
+                <p><a href="#">Как правильно надевать обувь?</a></p>
+              </div>
+            </div>
+            <div class="news sidebar-content">
+              <h3>Новости клиники</h3>
+              <ul class="news">
+                <li class="news__news-item"><a href="#">Движение - это жизнь!</a></li>
+                <li class="news__news-item"><a href="#">Подготовка лыжной сборной России для участия в Чемпионате мира по зимним видам спорта 2015.</a></li>
+                <li class="news__news-item"><a href="#">Мастер-класс по висцеральной мануальной терапии состоялся.</a></li>
+                <li class="news__news-item"><a href="#">Семинар по спортивному тейпированию «Polysport» прошёл в «Клинике мануальной терапии доктора Чечиля».</a></li>
+                <li class="news__news-item"><a href="#">Клиника Чечиля на XIII Международной выставке «KOSMETIK EXPO»!</a></li>
+                <li class="news__news-item"><a href="#">С. В. Чечиль на Олимпийских играх в Сочи</a></li>
+                <li class="news__news-item"><a href="#">Клиника С. В. Чечиля на «Здравоохранении-2013»</a></li>
+                <li class="news__news-item"><a href="#">Клиника Чечиля приняла участие в выставке InterCHARM 2013»</a></li>
+                <li class="news__news-item"><a href="#">С. Чечиль участвует в подготовке сбороной России к чемпионату мира по беговым лыжам в Италии</a></li>
+                <li class="news__news-item"><a href="#">Сергей Чечиль помогает в подготовке Олимпийской сборной по беговым лыжам</a></li>
+                <li class="news__news-item"><a href="#">Сергей Чечиль помогает в подготовке Олимпийской сборной по беговым лыжам</a></li>
+                <li class="news__news-item"><a href="#">Открытие клиники планируется в марте 2013</a></li>
+                <li class="news__news-item"><a href="#">Стенд клиники был представлен на выставке &quot;Здравохранение 2012&quot;</a></li>
+                <li><a class="read-more-link" href="#">Все новости ...</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <div><img class="footer__logo" src="images/logo.png" alt="Клиника мануальной терапии доктора Чечиля"></div>
+            <div><a class="agency" href="#">Продвижение сайта Агенство Neyiron</a></div>
+          </div>
+          <div class="footer-col">
+            <div>
+              <p><a class="tel" href="tel: +7(495)741-84-94">+7(495)741-84-94</a></p>
+              <p><a class="mail" href="mailto: reception@chechil.com">reception@chechil.com</a></p>
+            </div>
+            <div>
+              <p><a href="#">Информация для потребителя</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="address">
+              <p>123317, Москва, Пресненская наб., д. 12, ММДЦ "Москва Сити", Башня Федерация "Запад", 40 этаж.</p>
+            </div>
+            <div>
+              <p class="copyright">© ООО “Клиника-Чечиля”, 2012 - 2018<span class="social-links"><a href="https://vk.com/doctor_chechil"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-odnoklassniki"></i></a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Как до нас добраться</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div id="map_yandex"></div>
+            <div class="map-buttons">
+              <button class="btn btn-info btn-car"><i class="fas fa-car"></i></button>
+              <button class="btn btn-info btn-walk"><i class="fas fa-walking"></i></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
