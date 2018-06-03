@@ -24,6 +24,16 @@ window.onload = function () {
     initDatePicker();
     selectsInit();
 
+    $(document).ready(function (e) {
+        $('#doctor-choose').msDropdown();
+        $('#doctor-choose_msdd').removeAttr("style");
+
+        // decline proposalmodal show
+        $('#proposalDecline').on('click', function (e) {
+            $('#exampleModalCenter').modal();
+        });
+    });
+
     // for development uses only
     addHotkeysWatch();
 };
@@ -125,20 +135,27 @@ function initMap() {
 
 function initAppointmentPicker() {
     var picker = new AppointmentPicker(document.getElementById('appointment-picker'), {
-        title: 'Выберите время',
+        title: 'Пятница, 18.05.2018',
         interval: 30,
         mode: '24h',
         minTime: 9,
         maxTime: 19,
         startTime: 9,
-        endTime: 23,
-        disabled: ['16:30', '17:00']
+        endTime: 19,
+        disabled: ['16:30', '17:00'],
+        static: true
     });
 }
 
 function initDatePicker() {
     var datePicker = new Pikaday({
-        field: document.getElementById('date-reseravation-picker')
+        field: document.getElementById('date-reseravation-picker'),
+        bound: false,
+        firstDay: 1,
+        showDaysInNextAndPreviousMonths: true,
+        disableDayFn: function disableDayFn(date) {
+            return date.getDay() === 1;
+        }
     });
 }
 
@@ -157,3 +174,5 @@ function addHotkeysWatch() {
 function selectsInit() {
     customSelect('#doctor-category-choose');
 }
+
+function thumbnailInit() {}

@@ -1,16 +1,25 @@
 
-<div class="online-booking container">
+<div class="online-booking container online-reservation">
   <h1>Выберите врача и дату приёма:</h1>
   <form action="">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 online-booking__doctor-category-choose">
         <select class="form-control" id="doctor-category-choose" name="doctor_category_choose">
           <option value="1">Физиотерапевт</option>
+          <option value="1">Физиотерапевт</option>
+          <option value="1">Физиотерапевт</option>
+          <option value="1">Физиотерапевт</option>
+          <option value="1">Физиотерапевт</option>
+          <option value="1">Физиотерапевт</option>
         </select>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 online-booking__doctor-choose">
         <select class="form-control" id="doctor-choose" name="doctor_choose">
-          <option value="1" ="" data-thumbnail="images/logo-small.png">Брыкля Владимир Владимирович </option>
+          <option value="1" ="" data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
+          <option value="1" ="" data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
+          <option value="1" ="" data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
+          <option value="1" ="" data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
+          <option value="1" ="" data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
         </select>
       </div>
     </div>
@@ -28,9 +37,19 @@
           <p class="doctor">Врач: Брыкля В.В.</p>
           <p class="seans">Сеанс: Традиционный массаж</p>
           <p class="patient_phone">Телефон: +7 932 008 07 53</p>
-          <p class="patient_email">Email: patient@yandex.ru</p><a class="btn btn-info" href="#">Отменить сеанс</a>
+          <p class="patient_email">Email: patient@yandex.ru</p><a class="btn btn-info" href="#" id="proposalDecline">Отменить сеанс</a>
         </div>
       </div>
     </div>
   </form>
+  <div class="alert-modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="decline-c2a">Подтвердите отмену сеанса</p>
+          <div class="modal-buttons"><a class="btn btn-info" href="" data-dismiss="modal">Подтвердить отмену</a><a class="btn btn-default" href="" data-dismiss="modal">Вернуться</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
