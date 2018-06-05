@@ -19,7 +19,6 @@ window.onload = function () {
         autoplayHoverPause: true
     });
 
-    initMap();
     initAppointmentPicker();
     initDatePicker();
     selectsInit();
@@ -32,10 +31,18 @@ window.onload = function () {
         $('#proposalDecline').on('click', function (e) {
             $('#exampleModalCenter').modal();
         });
+
+        $('#calendar').fullCalendar({
+            defaultView: 'agendaWeek',
+            minTime: "08:00:00",
+            maxTime: "20:00:00",
+            locale: 'ru'
+        });
     });
 
     // for development uses only
     addHotkeysWatch();
+    initMap();
 };
 
 /**
@@ -175,4 +182,4 @@ function selectsInit() {
     customSelect('#doctor-category-choose');
 }
 
-function thumbnailInit() {}
+function calendarInit() {}
