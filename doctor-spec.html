@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Онлайн запись на прием
+    <title>Все специальности
     </title>
   </head>
   <body>
@@ -52,56 +52,36 @@
       <p> <a href="#" onclick="closeContents()">Закрыть</a></p>
     </div>
     <div class="online-booking container online-reservation">
-      <h1>Выберите врача и дату приёма:</h1>
-      <form action="">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 online-booking__doctor-category-choose">
-            <select class="form-control" id="doctor-category-choose" name="doctor_category_choose">
-              <option value="1">Физиотерапевт</option>
-              <option value="1">Физиотерапевт</option>
-              <option value="1">Физиотерапевт</option>
-              <option value="1">Физиотерапевт</option>
-              <option value="1">Физиотерапевт</option>
-              <option value="1">Физиотерапевт</option>
-            </select>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 online-booking__doctor-choose">
-            <select class="form-control" id="doctor-choose" name="doctor_choose">
-              <option value="1"  data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
-              <option value="1"  data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
-              <option value="1"  data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
-              <option value="1"  data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
-              <option value="1"  data-image="images/doctor_1.jpeg">Брыкля Владимир Владимирович </option>
-            </select>
-          </div>
+      <h1>Все специальности</h1>
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-lg-12">
+          <form action="">
+            <input class="form-control" type="text" name="search" placeholder="Поиск специальности врача ...">
+          </form>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <input class="form-control" type="text" id="date-reseravation-picker">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <input class="form-control" type="text" id="appointment-picker">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="patient">
-              <p class="patient-name">Калинин Артём Александрович</p>
-              <p class="time">16:00 - 16:30</p>
-              <p class="doctor">Врач: Брыкля В.В.</p>
-              <p class="seans">Сеанс: Традиционный массаж</p>
-              <p class="patient_phone">Телефон: +7 932 008 07 53</p>
-              <p class="patient_email">Email: patient@yandex.ru</p><a class="btn btn-info" href="#" id="proposalDecline">Отменить сеанс</a>
-            </div>
-          </div>
-        </div>
-      </form>
-      <div class="alert-modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p class="decline-c2a">Подтвердите отмену сеанса</p>
-              <div class="modal-buttons"><a class="btn btn-info" href="" data-dismiss="modal">Подтвердить отмену</a><a class="btn btn-default" href="" data-dismiss="modal">Вернуться</a></div>
-            </div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Название</th>
+                <th scope="col">Вид врача</th>
+                <th scope="col">Врачи по специальности</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Физиотерапия</td>
+                <td>Физиотерапевт</td>
+                <td>1, 2, 4</td>
+                <td><a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
