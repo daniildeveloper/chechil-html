@@ -37,6 +37,7 @@
           <li><a href="doctor-appointment-choose.html">Расписание приема всех докторов</a></li>
           <li><a href="clients-search.html">Поиск клиента</a></li>
           <li><a href="doctors-table.html">Доктора</a></li>
+          <li><a href="new-doctor.html">Новый доктор</a></li>
           <li><a href="doctor-spec.html">Специальности докторов</a></li>
           <li><a href="new-doctor-spec.html">Новая специальность доктора</a></li>
         </ol>
@@ -51,37 +52,152 @@
       </ol>
       <p> <a href="#" onclick="closeContents()">Закрыть</a></p>
     </div>
-    <div class="online-booking container online-reservation">
+    <form class="online-booking container online-reservation" action="">
       <h1>Новый врач</h1>
       <div class="row">
         <div class="col-sm-6 col-xs-6 col-lg-6">
-          <form action="">
-            <div class="form-group">
-              <input class="form-control" type="text" name="spec_name" placeholder="ФИО">
-            </div>
-            <div class="form-group">
-              <select class="form-control" id="doctor-category-choose" name="doctor_category_choose">
-                <option value="1">Физиотерапевт</option>
-                <option value="1">Физиотерапевт</option>
-                <option value="1">Физиотерапевт</option>
-                <option value="1">Физиотерапевт</option>
-                <option value="1">Физиотерапевт</option>
-                <option value="1">Физиотерапевт</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-info" type="submit">Сохранить</button>
-            </div>
-          </form>
+          <div class="form-group">
+            <input class="form-control" type="text" name="spec_name" placeholder="ФИО">
+          </div>
+          <div class="form-group">
+            <label class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Физиотерапевт</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-info" type="submit">Сохранить</button>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>График работ</h4>
+          <ul class="online-booking__week-days">
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_0" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Пн</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_1" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Вт</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_2" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Ср</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_3" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Чт</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_4" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Пт</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_5" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Сб</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+            <li>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input class="custom-control-input" name="week_day_6" checked="checked" type="checkbox"><span class="custom-control-indicator"></span><span class="custom-control-description">Вс</span>
+                </label>
+              </div>
+              <div class="row align-items-center" style="align-content: center">
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+                <div class="col-sm-1 xs-hidden"><span>-</span></div>
+                <div class="col-sm-5">
+                  <input class="time-picker form-control" type="time">
+                </div>
+              </div><br>
+            </li>
+          </ul>
+          <div class="form-group">
+            <button class="btn btn-info" type="submit">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </form>
     <footer class="footer">
       <div class="container">
         <div class="footer-row">
           <div class="footer-col">
             <div><img class="footer__logo" src="images/logo.png" alt="Клиника мануальной терапии доктора Чечиля"></div>
-            <div><a class="agency" href="#">Продвижение сайта Агенство Neyiron</a></div>
+            <div><a class="agency" href="https://spb-studio.design" target="_blank">Разработано в spb-studio.design</a></div>
           </div>
           <div class="footer-col">
             <div>

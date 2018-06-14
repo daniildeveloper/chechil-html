@@ -22,6 +22,7 @@ window.onload = function () {
     initAppointmentPicker();
     initDatePicker();
     selectsInit();
+    calendarInit();
 
     $(document).ready(function (e) {
         $('#doctor-choose').msDropdown();
@@ -35,8 +36,21 @@ window.onload = function () {
         $('#calendar').fullCalendar({
             defaultView: 'agendaWeek',
             minTime: "08:00:00",
-            maxTime: "20:00:00",
+            maxTime: "21:00:00",
             locale: 'ru'
+        });
+
+        $('#fc-shedule-doctor-week-agenda-peeker').fullCalendar({
+            defaultView: 'agendaWeek',
+            minTime: "08:00:00",
+            maxTime: "21:00:00",
+            locale: 'ru',
+            header: { // hide header data
+                center: '',
+                right: '',
+                left: ''
+            },
+            allDaySlot: false
         });
     });
 
@@ -62,16 +76,6 @@ function prevSlide(e) {
     owl.trigger('prev.owl.carousel');
     window.dispatchEvent(new Event('owl.prev'));
     window.dispatchEvent(new Event('prev.owl.carousel'));
-}
-
-/**
- * load js file by url. By example for yandex maps API
- * @param {String} file file url
- */
-function loadJsFile(file) {
-    var fileRef = document.createElement('script');
-    fileref.setAttribute("type", "text/javascript");
-    fileref.setAttribute("src", filename);
 }
 
 /**
